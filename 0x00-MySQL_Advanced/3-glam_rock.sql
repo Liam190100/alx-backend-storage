@@ -1,4 +1,4 @@
--- Lists all bands
+-- Lists all bands ,band_name and lifespan (in years until 2022 - please use 2022 instead of YEAR(CURDATE()))
 -- SELECT band_name,formed and split for computing the lifespan
 SELECT band_name, (IFNULL(split, '2020') - formed) AS lifespan
     FROM metal_bands
